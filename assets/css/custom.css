@@ -105,6 +105,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-section-infos {
@@ -423,4 +424,246 @@ footer p a:hover {
         transform: translateY(-30px);
     }
 }
+
+/*Media querys*/
+
+@media (max-width: 1361px) {
+
+    .main-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+
+    #header .logo {
+        width: 100px;
+    }
+
+    #header nav a {
+        font-size: 1rem;
+    }
+    
+    .main-section-infos h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-section-infos p {
+        font-size: 1.2rem;
+    }
+
+    .services-wrapper-infos button {
+        width: 40%;
+    }
+
+    #why-us {
+        padding: 4rem;
+    }
+
+    #contato {
+        padding: 3em;
+    }
+    
+    #contato h1 {
+        font-size: 2.5rem;
+    }
+
+    #sobre .sobre-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    #sobre .sobre-text p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1025px) {
+    .main-section-infos h1 {
+        font-size: 2rem;
+    }
+
+    .main-section-infos p {
+        font-size: 1rem;
+    }
+
+    .icons-wrapper a i {
+        padding: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    .main-section-img {
+        width: 45%;
+    }
+
+    .services-info {
+        width: 85%;
+    }
+
+    .services-container {
+        width: 85%;
+    }
+
+    #sobre .sobre-text {
+        width: 40%;
+    }
+
+    #sobre .sobre-text h1 {
+        font-size: 2.2rem;
+    }
+
+    #sobre .sobre-text p {
+        font-size: 0.95rem;
+    }
+
+    #sobre img {
+        width: 45%;
+    }
+
+    #why-us {
+        width: 90%;
+    }
+    
+    .why-us-item img {
+        width: 50px;
+    }
+    
+    .why-us-item p {
+        font-size: 0.95rem;
+    }
+
+    #contato h1 {
+        width: 40%;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    #header {
+        display: none;
+    }
+
+    #main-section {
+        height: 70vh;
+        padding: 1rem;
+    }
+
+    .main-section-infos {
+        width: 100%;
+    }
+    
+    .main-section-infos h1 {
+        font-size: 2.1em;   
+    }
+    
+    .main-section-infos p {
+        font-size: 1.1rem;
+    }
+    
+    .main-section-img {
+        display: none;
+    } 
+
+    .services-info {
+        width: 90%;
+    }
+    
+    .services-info h3 {
+        font-size: 1.2em;
+    }
+    
+    .services-info h2 {
+        font-size: 2.1em;   
+    }
+    
+    .services-info p {
+        font-size: 1.1rem;
+        color: #808285;
+    }
+    
+    .services-wrapper {
+        flex-wrap: wrap;
+    }
+    
+    .services-wrapper img {
+        width: 80%;
+        align-self: center;
+    }
+    
+    .services-wrapper-infos {
+        width: 100%;
+    }
+     
+    .services-wrapper-1, .services-wrapper-3 {
+        flex-direction: column-reverse;
+    }
+
+    #sobre {
+        flex-wrap: wrap;
+    }
+    
+    #sobre .sobre-text {
+        width: 100%;
+    }
+    
+    #sobre .sobre-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    #sobre .sobre-text p {
+        font-size: 1.1rem;
+    }
+    
+    #sobre img {
+        width: 100%;
+    }
+
+    #why-us {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    #why-us h1 {
+        font-size: 2.5rem;
+    }
+    
+    .why-us-wrapper {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    .why-us-item {
+        width: 100%;
+    }
+    
+    .why-us-item img {
+        width: 60px;
+    }
+    
+    .why-us-item h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .why-us-item p {
+        font-size: 1.1rem;
+        color: #808285;
+        text-align: justify;
+    }
+
+    #contato h1 {
+        width: 100%;
+    }
+
+    #contato button {
+        padding: 15px 40px;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
 
