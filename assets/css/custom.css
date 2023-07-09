@@ -33,8 +33,11 @@ body {
 
 .hamburger {
     display: none;
-    transition: 0.5s ease-in-out;
 }
+
+.transicao-suave {
+    transition: opacity 0.5s ease;
+  }
 
 /*Main*/
 
@@ -45,6 +48,7 @@ main {
 }
 
 #header {
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
@@ -54,7 +58,6 @@ main {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    border: 1px solid rgba(255,255,255,0.1);
 }
 
 #header .logo {
@@ -546,8 +549,8 @@ footer p a:hover {
     }
 
     #header #navigation {
-        text-align: center;
         width: 100%;
+        text-align: center;
         position: absolute;
         left: 0;
         top: -1000%;
@@ -604,6 +607,8 @@ footer p a:hover {
     }
     
     .services-info p {
+        width: 80%;
+        margin: 0 auto;
         font-size: 1.1rem;
         color: #808285;
     }
