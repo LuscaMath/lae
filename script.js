@@ -1,0 +1,18 @@
+const menu_hamburger = document.getElementById('menu-hamburger')
+const mobile_menu = document.getElementById('navigation')
+
+menu_hamburger.addEventListener('click', ()=>{
+    if(menu_hamburger.classList.contains('hamburger')) {
+        menu_hamburger.classList.remove('hamburger')
+        menu_hamburger.classList.add('x')
+        menu_hamburger.setAttribute('src', './assets/imagens/x.svg')
+        mobile_menu.setAttribute('style', 'top: 10vh');
+
+    }
+    else {
+        menu_hamburger.classList.remove('x')
+        menu_hamburger.classList.add('hamburger')
+        menu_hamburger.setAttribute('src', './assets/imagens/hamburger.svg')
+        mobile_menu.setAttribute('style', 'top: -1000%');
+    }
+})
