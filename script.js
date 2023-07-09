@@ -6,7 +6,7 @@ menu_hamburger.addEventListener('click', ()=>{
         menu_hamburger.classList.remove('hamburger')
         menu_hamburger.classList.add('x')
         menu_hamburger.setAttribute('src', './assets/imagens/x.svg')
-        mobile_menu.setAttribute('style', 'top: 10vh');
+        mobile_menu.setAttribute('style', 'top: 9.6vh');
 
     }
     else {
@@ -16,3 +16,12 @@ menu_hamburger.addEventListener('click', ()=>{
         mobile_menu.setAttribute('style', 'top: -1000%');
     }
 })
+
+document.querySelectorAll('#navigation a').forEach(n => {
+    n.addEventListener('click', () => {
+        mobile_menu.setAttribute('style', 'top: -1000%');
+        menu_hamburger.classList.remove('x')
+        menu_hamburger.classList.add('hamburger')
+        menu_hamburger.setAttribute('src', './assets/imagens/hamburger.svg')
+    })
+  })
